@@ -435,7 +435,7 @@ module fpga_tile_tb;
         
         // TEST 1
         // ABCD = 0000
-        // XOR = 0
+        
 
         tile_in = 4'b0000;
 
@@ -444,7 +444,7 @@ module fpga_tile_tb;
 
         // TEST 2
         // ABCD = 0001
-        // XOR = 1
+        
         
 
         tile_in = 4'b0001;
@@ -455,7 +455,7 @@ module fpga_tile_tb;
         
         // TEST 3
         // ABCD = 0011
-        // XOR = 0
+       
         
 
         tile_in = 4'b0011;
@@ -466,7 +466,7 @@ module fpga_tile_tb;
         
         // TEST 4
         // ABCD = 0111
-        // XOR = 1
+        
         
 
         tile_in = 4'b0111;
@@ -477,7 +477,7 @@ module fpga_tile_tb;
         
         // TEST 5
         // ABCD = 1111
-        // XOR = 0
+        
         
 
         tile_in = 4'b1111;
@@ -486,28 +486,16 @@ module fpga_tile_tb;
 
 
         // TEST 6
-        // Change switch matrix routing
-        //
-        // A = I2
-        // B = I0
-        // C = I3
-        // D = I1
-        
-        sel0 = 2'b01;
-        sel1 = 2'b11;
-        sel2 = 2'b00;
-        sel3 = 2'b10;
-        
+        // ABCD = 1010
+    
+
         tile_in = 4'b1010;
         
         #10;
 
 
         // TEST 7
-        // Select registered output
-        
-
-        sel = 1'b1;
+        // ABCD = 1101       
 
         tile_in = 4'b1101;
 
